@@ -3,7 +3,7 @@
 # *𝔼𝔻𝔻𝕐-𝔼𝕩𝕥𝕖𝕟𝕤𝕚𝕠𝕟𝕤*
 
 # All available repositories:
-> <a href="https://cloudstream.cf/repos">P̸͎͓̺̈́̓̽ŕ̸̫̻̔͒o̸̢͎̪͋̾̕v̸͉̝̞̔͒́i̵͙̫̝͊͊͘d̵̡̙̔͑͘͜e̴̠͉͚̒͋͝r̸̦̠̙̐͑̓s̸̢̡̫̒́̕ r̵͔̼͉̓̐͘e̸͓͓̺̓̿͘p̸̻̪̐͘͘o̸̘̻͔͋̒̓s̵͙̟̝̔͛͠i̵̺̘͇͒͆̐t̴̠̼͇́͌̒o̴̦͚͇͊͛͐r̴͇͍͔̒̕y̴͕̝̪͊̈́͠</a>
+> <a href="https://mustardchef.github.io/CS3SiteArchive/repos/">P̸͎͓̺̈́̓̽ŕ̸̫̻̔͒o̸̢͎̪͋̾̕v̸͉̝̞̔͒́i̵͙̫̝͊͊͘d̵̡̙̔͑͘͜e̴̠͉͚̒͋͝r̸̦̠̙̐͑̓s̸̢̡̫̒́̕ r̵͔̼͉̓̐͘e̸͓͓̺̓̿͘p̸̻̪̐͘͘o̸̘̻͔͋̒̓s̵͙̟̝̔͛͠i̵̺̘͇͒͆̐t̴̠̼͇́͌̒o̴̦͚͇͊͛͐r̴͇͍͔̒̕y̴͕̝̪͊̈́͠</a>
 
 ##
 
@@ -18,7 +18,7 @@
 
 ## Attribution
 
-This template as well as the gradle plugin and the whole plugin system is **heavily** based on [Aliucord](https://github.com/Aliucord).
+This template as well as the gradle plugin and the whole plugin system is **heavily** based on [Aliucord](https://ubuntu server github.com/Aliucord).
 *Go use it, it's a great mobile discord client mod!*
 
 </p>
