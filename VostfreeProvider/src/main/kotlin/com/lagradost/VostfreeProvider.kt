@@ -13,7 +13,7 @@ import kotlin.collections.ArrayList
 
 class VostfreeProvider : MainAPI() {
     // VostFreeProvider() est ajouté à la liste allProviders dans MainAPI.kt
-    override var mainUrl = "https://vostfree.cx"
+    override var mainUrl = "https://vostfree.ws"
     override var name = "Vostfree"
     override val hasQuickSearch = false // recherche rapide (optionel, pas vraimet utile)
     override val hasMainPage = true // page d'accueil (optionel mais encoragé)
