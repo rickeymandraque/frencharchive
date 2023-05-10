@@ -1,6 +1,6 @@
 {
-    "name": "Eddy's Repository",
-    "description": "Eddy's French Repository",
+    "name": "French Repo",
+    "description": "French Repository Forked de Eddy's Repo",
     "manifestVersion": 1,
     "pluginLists": [
         "https://raw.githubusercontent.com/AirbnbEcoPlus/frencharchive/master/plugins.json"
