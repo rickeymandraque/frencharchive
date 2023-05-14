@@ -54,8 +54,8 @@ class FrenchStreamSettingsFragment(
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE)
         super.onViewCreated(view, savedInstanceState)
-        val urlField = view.findViewById<EditText>(R.id.urlField)
-        val saveBtn = view.findViewById<Button>(R.id.saveBtn)
+        val urlField = view.findView<EditText>("urlField")
+        val saveBtn = view.findView<Button>("saveBtn")
         // Change Url
         if (sharedPref != null) {
             urlField.setText(sharedPref.getString("url", ""))
