@@ -20,7 +20,8 @@ class FrenchStreamSettingsFragment(
         private val plugin: Plugin,
         val frenchStreamProvider: FrenchStreamProvider
 ) :
-        BottomSheetDialogFragment() {
+    BottomSheetDialogFragment() {
+        
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
@@ -55,9 +56,23 @@ class FrenchStreamSettingsFragment(
         return plugin.resources!!.getString(id)
     }
 
-
+    @SuppressLint("CommitPrefEdits")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        
+        val sharedPref = activity?.getSharedPreferences(
+                getString("frenchstream"), Context.MODE_PRIVATE)
+        super.onViewCreated(view, savedInstanceState)
+        val urlField = view.findViewById<EditText>(R.id.urlField)
+        val saveBtn = view.findViewById<Button>(R.id.saveBtn)
+        // Change Url
+        if (sharedPref != null) {
+            urlField.setText(sharedPref.getString("url", ""))
+            sharedPref.getString("url", "")?.let { frenchStreamProvider.changeUrl(it) }
+        }
+
+        saveBtn.setOnClickListener(View.OnClickListener {
+            frenchStreamProvider.changeUrl(urlField.text.toString())
+            sharedPref?.edit()?.putString("url", urlField.text.toString())
+        })
         
     }
 }
