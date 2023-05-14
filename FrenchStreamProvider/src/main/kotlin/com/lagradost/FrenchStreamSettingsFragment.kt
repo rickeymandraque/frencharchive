@@ -21,7 +21,7 @@ class FrenchStreamSettingsFragment(
         val frenchStreamProvider: FrenchStreamProvider
 ) :
     BottomSheetDialogFragment() {
-        
+
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
@@ -50,16 +50,9 @@ class FrenchStreamSettingsFragment(
         return ResourcesCompat.getDrawable(plugin.resources!!, id, null)
     }
 
-    private fun getString(name: String): String? {
-        val id =
-                plugin.resources!!.getIdentifier(name, "string", BuildConfig.LIBRARY_PACKAGE_NAME)
-        return plugin.resources!!.getString(id)
-    }
-
     @SuppressLint("CommitPrefEdits")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val sharedPref = activity?.getSharedPreferences(
-                getString("frenchstream"), Context.MODE_PRIVATE)
+        val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE)
         super.onViewCreated(view, savedInstanceState)
         val urlField = view.findViewById<EditText>(R.id.urlField)
         val saveBtn = view.findViewById<Button>(R.id.saveBtn)

@@ -25,7 +25,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/url_text" />
+                android:text="Url du site web" />
 
             <EditText
                 android:id="@+id/urlField"
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="@string/url_field_label"
+                android:hint="Url"
                 android:inputType="text" />
         </LinearLayout>
 
@@ -43,7 +43,7 @@
         android:id="@+id/saveBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/save_btn_label" />
+        android:text="Enregistrer" />
 
 
 </LinearLayout>

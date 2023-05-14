@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="url_text" translatable="false">Url du site Web</string>
-    <string name="url_field_label" translatable="false">Url</string>
-    <string name="save_btn_label" translatable="false">Enregistrer</string>
-
-
-</resources>
