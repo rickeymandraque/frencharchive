@@ -1,6 +1,7 @@
 package com.lagradost
 
 
+import android.text.Editable
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.lagradost.cloudstream3.*
 import com.lagradost.cloudstream3.LoadResponse.Companion.addTrailer
@@ -31,6 +32,9 @@ class FrenchStreamProvider : MainAPI() {
                 article.toSearchResponse()
             }
         return allresultshome
+    }
+    fun changeUrl(userUrl: String){
+        mainUrl = userUrl;
     }
 
     private fun Element.takeEpisode(

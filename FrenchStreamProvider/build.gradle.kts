@@ -1,5 +1,9 @@
 // use an integer for version numbers
 version = 3
+dependencies {
+    implementation("androidx.core:core:1.7.0")
+    implementation("com.google.android.material:material:1.5.0")
+}
 
 
 cloudstream {
@@ -7,7 +11,7 @@ cloudstream {
     // All of these properties are optional, you can safely remove them
 
      description = "FRENCH STREAM en plus d'être un site efficace et plaisant dispose d'un contenu visuel diversifié"
-     authors = listOf("Sarlay", "Eddy976")
+     authors = listOf("Sarlay", "Eddy976", "AirbnbEcoPlus")
 
     /**
      * Status int as the following:
