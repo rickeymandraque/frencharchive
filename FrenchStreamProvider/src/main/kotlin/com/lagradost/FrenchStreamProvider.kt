@@ -35,6 +35,9 @@ class FrenchStreamProvider : MainAPI() {
     fun changeUrl(userUrl: String){
         mainUrl = userUrl;
     }
+    fun getUrl(): String{
+        return(mainUrl);
+    }
 
     private fun Element.takeEpisode(
         url: String,

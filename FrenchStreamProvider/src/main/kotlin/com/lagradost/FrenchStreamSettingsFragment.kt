@@ -49,22 +49,24 @@ class FrenchStreamSettingsFragment(
                 plugin.resources!!.getIdentifier(name, "drawable", BuildConfig.LIBRARY_PACKAGE_NAME)
         return ResourcesCompat.getDrawable(plugin.resources!!, id, null)
     }
+   
 
     @SuppressLint("CommitPrefEdits")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE)
+        val sharedPreference =  activity?.getSharedPreferences("frenchstream",Context.MODE_PRIVATE)
+        var editor = sharedPreference?.edit()
         super.onViewCreated(view, savedInstanceState)
         val urlField = view.findView<EditText>("urlField")
         val saveBtn = view.findView<Button>("saveBtn")
         // Change Url
-        if (sharedPref != null) {
-            urlField.setText(sharedPref.getString("url", ""))
-            sharedPref.getString("url", "")?.let { frenchStreamProvider.changeUrl(it) }
+        if(sharedPreference?.contains("url") == true){
+            urlField.setText(frenchStreamProvider.getUrl())
+            sharedPreference.getString("url", "Error")?.let { frenchStreamProvider.changeUrl(it)}
         }
-
         saveBtn.setOnClickListener(View.OnClickListener {
             frenchStreamProvider.changeUrl(urlField.text.toString())
-            sharedPref?.edit()?.putString("url", urlField.text.toString())
+            editor?.putString("url", urlField.text.toString())
+            editor?.commit()
         })
         
     }
