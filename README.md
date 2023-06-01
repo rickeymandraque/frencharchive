@@ -20,9 +20,9 @@ And Thanks to [MusterChef](https://github.com/MustardChef/eddyarchive/)
 
    
 ## Infos
-Frenchstream ne marche actuellement pas, il sera corriger je l'espère dans un court delai.
-Une nouveaux site va bientôt rejoindre le repo KDrama il permet d'avoir une grande liste de dramas corréens
-Je suis sur une refonte de l'ui des sites pour leur ajouter un bouton pour changer l'url facilement 
+- Frenchstream ne marche actuellement pas, il sera corriger je l'espère dans un court delai.
+- Une nouveaux site va bientôt rejoindre le repo KDrama il permet d'avoir une grande liste de dramas corréens
+- Je suis sur une refonte de l'ui des sites pour leur ajouter un bouton pour changer l'url facilement 
 </p>
 
 > [![Discord](https://invidget.switchblade.xyz/5Hus6fM)](https://discord.gg/5Hus6fM)
