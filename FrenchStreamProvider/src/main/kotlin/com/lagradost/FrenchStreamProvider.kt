@@ -9,11 +9,12 @@ import com.lagradost.cloudstream3.utils.AppUtils.toJson
 import com.lagradost.cloudstream3.utils.AppUtils.tryParseJson
 import com.lagradost.cloudstream3.utils.ExtractorLink
 import com.lagradost.cloudstream3.utils.loadExtractor
+import android.util.Log
 import org.jsoup.nodes.Element
 
 
 class FrenchStreamProvider : MainAPI() {
-    override var mainUrl = "https://french-stream.lat" //re ou ac ou city
+    override var mainUrl = "https://ww1.french-stream.lat/" //re ou ac ou city
     override var name = "FrenchStream"
     override val hasQuickSearch = false
     override val hasMainPage = true

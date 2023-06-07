@@ -198,5 +198,24 @@
         "description": "WIFLIX, le site gr\u00e2ce auquel vous allez pouvoir regarder vos films et s\u00e9ries pr\u00e9f\u00e9r\u00e9es",
         "url": "http://192.168.1.136/compiled/WiflixProvider.cs3",
         "name": "WiflixProvider"
+    },
+    {
+        "iconUrl": "",
+        "apiVersion": 1,
+        "repositoryUrl": "http://192.168.1.136/",
+        "fileSize": 26169,
+        "status": 1,
+        "language": "fr",
+        "authors": [
+            "AirbnbEcoPlus"
+        ],
+        "tvTypes": [
+            "AsianDrama"
+        ],
+        "version": 1,
+        "internalName": "KDrama",
+        "description": "KDrama, est un site de drama corréen qui offre une grande rapidité de publication",
+        "url": "http://192.168.1.136/compiled/KDramaProvider.cs3",
+        "name": "KDramaProvider"
     }
 ]

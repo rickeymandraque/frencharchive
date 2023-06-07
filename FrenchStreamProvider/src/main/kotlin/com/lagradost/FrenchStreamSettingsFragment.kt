@@ -58,11 +58,8 @@ class FrenchStreamSettingsFragment(
         super.onViewCreated(view, savedInstanceState)
         val urlField = view.findView<EditText>("urlField")
         val saveBtn = view.findView<Button>("saveBtn")
-        // Change Url
-        if(sharedPreference?.contains("url") == true){
-            urlField.setText(frenchStreamProvider.getUrl())
-            sharedPreference.getString("url", "Error")?.let { frenchStreamProvider.changeUrl(it)}
-        }
+        // Load Url
+        urlField.setText(frenchStreamProvider.getUrl())
         saveBtn.setOnClickListener(View.OnClickListener {
             frenchStreamProvider.changeUrl(urlField.text.toString())
             editor?.putString("url", urlField.text.toString())
