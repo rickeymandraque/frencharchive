@@ -13,7 +13,7 @@ import org.jsoup.nodes.Element
 
 
 class FrenchStreamProvider : MainAPI() {
-    override var mainUrl = "https://french-stream.lat" //re ou ac ou city
+    override var mainUrl = "https://french-stream.plus" //re ou ac ou city
     override var name = "FrenchStream"
     override val hasQuickSearch = false
     override val hasMainPage = true
@@ -224,7 +224,7 @@ class FrenchStreamProvider : MainAPI() {
         servers.apmap {
             val urlplayer = it.second
 
-            val playerUrl = if (urlplayer.contains("opsktp.com") || urlplayer.contains("flixeo.xyz")) {
+            val playerUrl = if (urlplayer.contains("owantedEpisodepsktp.com") || urlplayer.contains("flixeo.xyz")) {
                 val header = app.get(
                     "https" + it.second.split("https")[1],
                     allowRedirects = false
