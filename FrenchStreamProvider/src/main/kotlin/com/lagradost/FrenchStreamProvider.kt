@@ -14,7 +14,7 @@ import org.jsoup.nodes.Element
 
 
 class FrenchStreamProvider : MainAPI() {
-    override var mainUrl = "https://ww1.french-stream.lat/" //re ou ac ou city
+    override var mainUrl = "https://french-stream.gold/" //re ou ac ou city
     override var name = "FrenchStream"
     override val hasQuickSearch = false
     override val hasMainPage = true
@@ -83,13 +83,12 @@ class FrenchStreamProvider : MainAPI() {
         var subEpisodes = listOf<Episode>()
         var dubEpisodes = listOf<Episode>()
         val title = soup.selectFirst("h1#s-title")!!.text().toString()
-        val isMovie = !url.contains("/serie/", ignoreCase = true)
         val description =
-            soup.selectFirst("div.fdesc")!!.text().toString()
-                .split("streaming", ignoreCase = true)[1].replace(":", "")
+            soup.selectFirst("div#s-desc")!!.text().toString()
         val poster = soup.selectFirst("div.fposter > img")?.attr("src")
         val listEpisode = soup.select("div.elink")
         val tags = soup.select("ul.flist-col > li").getOrNull(1)
+        val isMovie = soup.select("div.VOSTFR-tab").isNullOrEmpty()
         //val rating = soup.select("span[id^=vote-num-id]")?.getOrNull(1)?.text()?.toInt()
 
         if (isMovie) {
