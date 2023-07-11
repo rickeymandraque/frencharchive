@@ -21,7 +21,6 @@ And Thanks to [MusterChef](https://github.com/MustardChef/eddyarchive/)
    
 ## Infos
 - Un nouveaux site va bientôt rejoindre la repo, KDrama il permet d'avoir une grande liste de dramas corréens
-- Je suis sur une refonte de l'ui des sites pour leur ajouter un bouton pour changer l'url facilement 
 </p>
 
 > [![Discord](https://invidget.switchblade.xyz/5Hus6fM)](https://discord.gg/5Hus6fM)
