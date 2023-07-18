@@ -19,7 +19,7 @@ class KDramaProvider : MainAPI() {
     override var mainUrl = "https://kdrama.best/" 
     override var name = "KDrama"
     override val supportedTypes = setOf(TvType.AsianDrama)
-
+    override val hasQuickSearch = false
     override var lang = "fr"
 
     // enable this when your provider has a main page

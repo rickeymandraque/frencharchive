@@ -11,7 +11,7 @@ import com.lagradost.cloudstream3.utils.M3u8Helper
 // This is a modified version of https://github.com/jmir1/aniyomi-extensions/blob/master/src/en/genoanime/src/eu/kanade/tachiyomi/animeextension/en/genoanime/extractors/StreamSBExtractor.kt
 // The following code is under the Apache License 2.0 https://github.com/jmir1/aniyomi-extensions/blob/master/LICENSE
 open class StreamSBadd : ExtractorApi() {
-    override var name = "PlayerSBb"
+    override var name = "PlayerSBc"
     override var mainUrl = "https://playersb.com"
     override val requiresReferer = false
 

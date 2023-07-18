@@ -7,23 +7,6 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
 }
 
-android {
-    // Configure only for each module that uses Java 8
-    // language features (either in its source code or
-    // through dependencies).
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    // For Kotlin projects
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
-    defaultConfig {
-        minSdkVersion(26)
-    }
-}
-
 cloudstream {
     language = "fr"
     // All of these properties are optional, you can safely remove them
@@ -44,5 +27,5 @@ cloudstream {
     )
 
     iconUrl = ""
-    requiresResources = true
+    requiresResources = false
 }

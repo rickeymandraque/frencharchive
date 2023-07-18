@@ -1,29 +1,10 @@
 // use an integer for version numbers
 version = 4
 dependencies {
-    implementation("androidx.core:core:1.7.0")
-    implementation("com.google.android.material:material:1.5.0")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
+    implementation("com.google.android.material:material:1.4.0")
     implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
 }
-
-android {
-    // Configure only for each module that uses Java 8
-    // language features (either in its source code or
-    // through dependencies).
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    // For Kotlin projects
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
-    defaultConfig {
-        minSdkVersion(26)
-    }
-}
-
 cloudstream {
     language = "fr"
     // All of these properties are optional, you can safely remove them
@@ -45,5 +26,5 @@ cloudstream {
     )
 
     iconUrl = "https://www.google.com/s2/favicons?domain=french-stream.ac&sz=%size%"
-    requiresResources = true
+    requiresResources = false
 }

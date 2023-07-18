@@ -33,7 +33,6 @@ val disabled = listOf<String>(
     "UakinoProvider", 
     "UseeTv", 
     "YomoviesProvider",
-    "KDrameProvider"
 )
 
 File(rootDir, ".").eachDir { dir ->
