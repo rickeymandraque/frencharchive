@@ -101,8 +101,6 @@ class KDramaProvider : MainAPI() {
             val regex = """SRC="([^"]+)"""".toRegex()
             val matchResult = regex.find(decodedString)
             val playerUrl = matchResult?.groupValues?.get(1).toString()
-            Log.e("12323123123123AZJIDHJSDJSHQDBJSDHQDHHSDQHDQS", decodedString)
-            Log.e("12323123123123AZJIDHJSDJSHQDBJSDHQDHHSDQHDQS", playerUrl)
             loadExtractor(
                 fixUrl(playerUrl),
                 subtitleCallback

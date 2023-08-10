@@ -14,7 +14,7 @@ import java.util.*
 
 
 class WiflixProvider : MainAPI() {
-    override var mainUrl = "https://wiflix.cx"
+    override var mainUrl = "https://wiflix.voto"
     override var name = "Wiflix"
     override val hasQuickSearch = false // recherche rapide (optionel, pas vraimet utile)
     override val hasMainPage = true // page d'accueil (optionel mais encoragé)
@@ -23,7 +23,6 @@ class WiflixProvider : MainAPI() {
         setOf(TvType.Movie, TvType.TvSeries) // series, films
     private val interceptor = CloudflareKiller()
     private var isNotInit = true
-
     suspend fun initMainUrl() {
         try {
             val document = avoidCloudflare(mainUrl).document

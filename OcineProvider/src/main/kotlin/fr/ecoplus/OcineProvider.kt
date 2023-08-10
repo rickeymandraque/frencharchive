@@ -13,9 +13,9 @@ import android.util.Log
 import org.jsoup.nodes.Element
 
 
-class FrenchStreamProvider : MainAPI() {
-    override var mainUrl = "https://french-stream.gold/"
-    override var name = "FrenchStream"
+class OcineProvider : MainAPI() {
+    override var mainUrl = "https://ocine.online/"
+    override var name = "Ocine"
     override val hasQuickSearch = false
     override val hasMainPage = true
     override var lang = "fr"
@@ -25,7 +25,7 @@ class FrenchStreamProvider : MainAPI() {
         val link = "$mainUrl/?do=search&subaction=search&story=$query" // search'
         val document =
             app.post(link).document // app.get() permet de télécharger la page html avec une requete HTTP (get)
-        val results = document.select("div#dle-content > > div.short")
+        val results = document.select("div#dle-content > > a")
 
         val allresultshome =
             results.mapNotNull { article ->  // avec mapnotnull si un élément est null, il sera automatiquement enlevé de la liste
@@ -248,7 +248,7 @@ class FrenchStreamProvider : MainAPI() {
 
     private fun Element.toSearchResponse(): SearchResponse {
 
-        val posterUrl = fixUrl(select("a.short-poster > img").attr("src"))
+        val posterUrl = fixUrl(select("div.img").attr("src"))
         val qualityExtracted = select("span.film-ripz > a").text()
         val type = select("span.mli-eps").text().lowercase()
         val title = select("div.short-title").text()
