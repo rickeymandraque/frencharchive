@@ -9,7 +9,7 @@ cloudstream {
     language = "fr"
     // All of these properties are optional, you can safely remove them
 
-     description = "FRENCH STREAM en plus d'être un site efficace et plaisant dispose d'un contenu visuel diversifié"
+     description = "Ociné est un site de streaming qui dispose d'un grande quantité de films et series"
      authors = listOf("Sarlay", "Eddy976", "AirbnbEcoPlus")
 
     /**

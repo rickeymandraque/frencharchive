@@ -6,7 +6,7 @@ cloudstream {
     language = "fr"
     // All of these properties are optional, you can safely remove them
 
-    description = "Otakurf.co met à votre disposition une technologie omniprésente, qui vous permet de regarder  des animes qui sont sous-titrés en français"
+    description = "Otakufr.co met à votre disposition une technologie omniprésente, qui vous permet de regarder  des animes qui sont sous-titrés en français"
     authors = listOf("Eddy")
 
     /**

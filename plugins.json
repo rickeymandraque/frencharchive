@@ -1,45 +1,5 @@
 [
     {
-        "iconUrl": "https://www.google.com/s2/favicons?domain=anime-sama.fr&sz=%size%",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/AirbnbEcoPlus/frencharchive",
-        "fileSize": 30714,
-        "status": 1,
-        "language": "fr",
-        "authors": [
-            "Eddy"
-        ],
-        "tvTypes": [
-            "Anime",
-            "AnimeMovie"
-        ],
-        "version": 1,
-        "internalName": "AnimeSamaProvider",
-        "description": "D\u00e9couvrez ce site qui regroupe les derniers animes et les scans. C'est un site pour les fans de manga. Tout y est",
-        "url": "https://raw.githubusercontent.com/AirbnbEcoPlus/frencharchive/master/compiled/AnimeSamaProvider.cs3",
-        "name": "AnimeSamaProvider"
-    },
-    {
-        "iconUrl": "https://www.google.com/s2/favicons?domain=empire-streaming.co&sz=%size%",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/AirbnbEcoPlus/frencharchive",
-        "fileSize": 42922,
-        "status": 1,
-        "language": "fr",
-        "authors": [
-            "Eddy"
-        ],
-        "tvTypes": [
-            "TvSeries",
-            "Movie"
-        ],
-        "version": 2,
-        "internalName": "EmpireStreamingProvider",
-        "description": "Empire Streaming regroupe Netflix, Amazon Prime video, Apple Tv, Disney plus ...",
-        "url": "https://raw.githubusercontent.com/AirbnbEcoPlus/frencharchive/master/compiled/EmpireStreamingProvider.cs3",
-        "name": "EmpireStreamingProvider"
-    },
-    {
         "iconUrl": "https://www.google.com/s2/favicons?domain=french-stream.ac&sz=%size%",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/AirbnbEcoPlus/frencharchive",
@@ -83,24 +43,6 @@
         "name": "MaciptvProvider"
     },
     {
-        "iconUrl": "https://mesfilms.lol/wp-content/uploads/2021/08/mflogo_round.png",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/AirbnbEcoPlus/frencharchive",
-        "fileSize": 16390,
-        "status": 1,
-        "language": "fr",
-        "authors": [
-            "Sarlay"
-        ],
-        "tvTypes": [
-            "Movie"
-        ],
-        "version": 1,
-        "internalName": "MesFilmsProvider",
-        "url": "https://raw.githubusercontent.com/AirbnbEcoPlus/frencharchive/master/compiled/MesFilmsProvider.cs3",
-        "name": "MesFilmsProvider"
-    },
-    {
         "iconUrl": "https://www.google.com/s2/favicons?domain=neko-sama.fr&sz=%size%",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/AirbnbEcoPlus/frencharchive",
@@ -114,7 +56,7 @@
             "Anime",
             "AnimeMovie"
         ],
-        "version": 2,
+        "version": 3,
         "internalName": "NekosamaProvider",
         "description": " Ce site fait son entr\u00e9e dans la cat\u00e9gorie des meilleurs sites animes Fran\u00e7ais. Il est tr\u00e8s fiable car quasiment tous ses liens vid\u00e9os marchent. Il propose des animes en \u00ab VF \u00bb version fran\u00e7aise et en \u00ab VOSTFR \u00bb version originale Sous-titr\u00e9e en Fran\u00e7ais.",
         "url": "https://raw.githubusercontent.com/AirbnbEcoPlus/frencharchive/master/compiled/NekosamaProvider.cs3",
@@ -139,25 +81,6 @@
         "description": "Otakurf.co met \u00e0 votre disposition une technologie omnipr\u00e9sente, qui vous permet de regarder  des animes qui sont sous-titr\u00e9s en fran\u00e7ais",
         "url": "https://raw.githubusercontent.com/AirbnbEcoPlus/frencharchive/master/compiled/OtakuFRProvider.cs3",
         "name": "OtakuFRProvider"
-    },
-    {
-        "iconUrl": "https://thumbs.dreamstime.com/b/sur-les-ailes-de-la-libert%C3%A9-oiseaux-volant-et-cha%C3%AEnes-cass%C3%A9es-concept-charge-146675254.jpg",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/AirbnbEcoPlus/frencharchive",
-        "fileSize": 19691,
-        "status": 0,
-        "language": "fr",
-        "authors": [
-            "Eddy"
-        ],
-        "tvTypes": [
-            "Live"
-        ],
-        "version": 1,
-        "internalName": "PickTV",
-        "description": "Ajoutez vos cha\u00eenes iptv pr\u00e9f\u00e9r\u00e9es",
-        "url": "https://raw.githubusercontent.com/AirbnbEcoPlus/frencharchive/master/compiled/PickTV.cs3",
-        "name": "PickTV"
     },
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=vostfree.cx&sz=%size%",

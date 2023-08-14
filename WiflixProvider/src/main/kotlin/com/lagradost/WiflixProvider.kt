@@ -14,7 +14,7 @@ import java.util.*
 
 
 class WiflixProvider : MainAPI() {
-    override var mainUrl = "https://wiflix.surf"
+    override var mainUrl = "https://wiflix.fan"
     override var name = "Wiflix"
     override val hasQuickSearch = false // recherche rapide (optionel, pas vraimet utile)
     override val hasMainPage = true // page d'accueil (optionel mais encoragé)
@@ -23,30 +23,14 @@ class WiflixProvider : MainAPI() {
         setOf(TvType.Movie, TvType.TvSeries) // series, films
     private val interceptor = CloudflareKiller()
     private var isNotInit = true
-
     suspend fun initMainUrl() {
         try {
             val document = avoidCloudflare(mainUrl).document
             val newMainUrl = document.select("link[rel*=\"canonical\"]").attr("href")
             if (!newMainUrl.isNullOrBlank() && newMainUrl.contains("wiflix")) { // allow to find the redirect url if it's changed
                 mainUrl = newMainUrl
-            } else {
-                // i don't know why but clone feature seems not to work with wiflix then get the url from a file
-                app.get("https://raw.githubusercontent.com/Eddy976/cloudstream-extensions-eddy/ressources/fetchwebsite.json")
-                    .parsed<ArrayList<mediaData>>().forEach {
-                        if (it.title.contains("wiflix", ignoreCase = true)) {
-                            mainUrl = it.url
-                        }
-                    }
             }
         } catch (e: Exception) { // url changed
-            app.get("https://raw.githubusercontent.com/Eddy976/cloudstream-extensions-eddy/ressources/fetchwebsite.json")
-                .parsed<ArrayList<mediaData>>().forEach {
-                    if (it.title.contains("wiflix", ignoreCase = true)) {
-                        mainUrl = it.url
-                    }
-                }
-
         }
         if (mainUrl.endsWith("/")) mainUrl.dropLast(1)
         isNotInit = false
@@ -272,9 +256,6 @@ class WiflixProvider : MainAPI() {
         document.select(cssCodeForPlayer).apmap { player -> // séléctione tous les players
             var playerUrl = "https" + player.attr("href").replace("(.*)https".toRegex(), "")
             if (!playerUrl.isBlank())
-                if (playerUrl.contains("dood")) {
-                    playerUrl = playerUrl.replace("doodstream.com", "dood.wf")
-                }
             loadExtractor(
                 httpsify(playerUrl),
                 playerUrl,

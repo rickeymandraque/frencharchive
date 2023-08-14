@@ -1,5 +1,6 @@
 package com.lagradost
 
+import android.content.SharedPreferences
 import android.content.res.ColorStateList
 import android.graphics.drawable.Drawable
 import android.os.Bundle
@@ -10,11 +11,11 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.res.ResourcesCompat
-import com.lagradost.cloudstream3.R
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.lagradost.cloudstream3.R
 import com.lagradost.cloudstream3.plugins.Plugin
-import com.lagradost.cloudstream3.ui.settings.SettingsAccount.Companion.showLoginInfo
 import com.lagradost.cloudstream3.ui.settings.SettingsAccount.Companion.addAccount
+import com.lagradost.cloudstream3.ui.settings.SettingsAccount.Companion.showLoginInfo
 import com.lagradost.cloudstream3.utils.UIHelper.colorFromAttribute
 
 
@@ -24,6 +25,7 @@ class MacIptvSettingsFragment(
     val tagsmaciptvAPI: TagsMacIptvAPI
 ) :
     BottomSheetDialogFragment() {
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -57,6 +59,7 @@ class MacIptvSettingsFragment(
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        
         super.onViewCreated(view, savedInstanceState)
         val infoView = view.findView<LinearLayout>("iptvbox_info")
         val infoTextView = view.findView<TextView>("info_main_text")

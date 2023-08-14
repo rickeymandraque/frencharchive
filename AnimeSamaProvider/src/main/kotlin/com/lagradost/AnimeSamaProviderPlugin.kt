@@ -13,7 +13,5 @@ class AnimeSamaPlugin: Plugin() {
 		registerExtractorAPI(Myvitop())
 		registerExtractorAPI(SendvidExtractor())
 		
-		
-		
     }
 }
