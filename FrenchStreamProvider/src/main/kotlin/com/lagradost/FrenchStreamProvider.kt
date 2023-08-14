@@ -68,6 +68,7 @@ class FrenchStreamProvider : MainAPI() {
                 null,
                 epNum,
                 a.selectFirst("div.fposter > img")?.attr("src"),
+
             )
         }
     }
