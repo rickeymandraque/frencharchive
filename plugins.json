@@ -17,28 +17,8 @@
         "version": 4,
         "internalName": "FrenchStreamProvider",
         "description": "FRENCH STREAM en plus d'\u00eatre un site efficace et plaisant dispose d'un contenu visuel diversifi\u00e9",
-        "url": "http://192.168.1.135/compiled/FrenchStreamProvider.cs3",
+        "url": "https://raw.githubusercontent.com/AirbnbEcoPlus/frencharchive/master/compiled/FrenchStreamProvider.cs3",
         "name": "FrenchStreamProvider"
-    },
-    {
-        "iconUrl": "https://www.google.com/s2/favicons?domain=neko-sama.fr&sz=%size%",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/AirbnbEcoPlus/frencharchive",
-        "fileSize": 25740,
-        "status": 1,
-        "language": "fr",
-        "authors": [
-            "Eddy"
-        ],
-        "tvTypes": [
-            "Anime",
-            "AnimeMovie"
-        ],
-        "version": 3,
-        "internalName": "NekosamaProvider",
-        "description": " Ce site fait son entr\u00e9e dans la cat\u00e9gorie des meilleurs sites animes Fran\u00e7ais. Il est tr\u00e8s fiable car quasiment tous ses liens vid\u00e9os marchent. Il propose des animes en \u00ab VF \u00bb version fran\u00e7aise et en \u00ab VOSTFR \u00bb version originale Sous-titr\u00e9e en Fran\u00e7ais.",
-        "url": "http://192.168.1.135/compiled/NekosamaProvider.cs3",
-        "name": "NekosamaProvider"
     },
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=franceiptv.fr/&sz=%size%",
@@ -58,8 +38,28 @@
         "version": 9,
         "internalName": "MaciptvProvider",
         "description": "Add your IPTV account or use the default account to watch Live TV, Movies,TvSeries ...",
-        "url": "http://192.168.1.135/compiled/MaciptvProvider.cs3",
+        "url": "https://raw.githubusercontent.com/AirbnbEcoPlus/frencharchive/master/compiled/MaciptvProvider.cs3",
         "name": "MaciptvProvider"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=neko-sama.fr&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/AirbnbEcoPlus/frencharchive",
+        "fileSize": 25740,
+        "status": 1,
+        "language": "fr",
+        "authors": [
+            "Eddy"
+        ],
+        "tvTypes": [
+            "Anime",
+            "AnimeMovie"
+        ],
+        "version": 3,
+        "internalName": "NekosamaProvider",
+        "description": " Ce site fait son entr\u00e9e dans la cat\u00e9gorie des meilleurs sites animes Fran\u00e7ais. Il est tr\u00e8s fiable car quasiment tous ses liens vid\u00e9os marchent. Il propose des animes en \u00ab VF \u00bb version fran\u00e7aise et en \u00ab VOSTFR \u00bb version originale Sous-titr\u00e9e en Fran\u00e7ais.",
+        "url": "https://raw.githubusercontent.com/AirbnbEcoPlus/frencharchive/master/compiled/NekosamaProvider.cs3",
+        "name": "NekosamaProvider"
     },
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=otakufr.co&sz=%size%",
@@ -78,7 +78,7 @@
         "version": 1,
         "internalName": "OtakuFRProvider",
         "description": "Otakurf.co met \u00e0 votre disposition une technologie omnipr\u00e9sente, qui vous permet de regarder  des animes qui sont sous-titr\u00e9s en fran\u00e7ais",
-        "url": "http://192.168.1.135/compiled/OtakuFRProvider.cs3",
+        "url": "https://raw.githubusercontent.com/AirbnbEcoPlus/frencharchive/master/compiled/OtakuFRProvider.cs3",
         "name": "OtakuFRProvider"
     },
     {
@@ -98,7 +98,7 @@
         "version": 1,
         "internalName": "VostfreeProvider",
         "description": " Ce site est certainement l\u2019un des meilleurs sites permettant de regarder des animes en ligne et gratuitement. Il vous propose la version \u00ab VF \u00bb version fran\u00e7aise et la \u00ab VOSTFR \u00bb version originale Sous-titr\u00e9e en Fran\u00e7ais.",
-        "url": "http://192.168.1.135/compiled/VostfreeProvider.cs3",
+        "url": "https://raw.githubusercontent.com/AirbnbEcoPlus/frencharchive/master/compiled/VostfreeProvider.cs3",
         "name": "VostfreeProvider"
     },
     {
@@ -118,47 +118,7 @@
         "version": 1,
         "internalName": "WiflixProvider",
         "description": "WIFLIX, le site gr\u00e2ce auquel vous allez pouvoir regarder vos films et s\u00e9ries pr\u00e9f\u00e9r\u00e9es",
-        "url": "http://192.168.1.135/compiled/WiflixProvider.cs3",
+        "url": "https://raw.githubusercontent.com/AirbnbEcoPlus/frencharchive/master/compiled/WiflixProvider.cs3",
         "name": "WiflixProvider"
-    },
-    {
-        "iconUrl": "",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/AirbnbEcoPlus/frencharchive",
-        "fileSize": 26169,
-        "status": 1,
-        "language": "fr",
-        "authors": [
-            "AirbnbEcoPlus"
-        ],
-        "tvTypes": [
-            "TvSeries",
-            "Movie"
-        ],
-        "version": 1,
-        "internalName": "KDrama",
-        "description": "KDrama un site connu pour proposer des séries coreene de qualité",
-        "url": "http://192.168.1.135/compiled/KDramaProvider.cs3",
-        "name": "KDrama"
-    },
-    {
-        "iconUrl": "",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/AirbnbEcoPlus/frencharchive",
-        "fileSize": 26169,
-        "status": 1,
-        "language": "fr",
-        "authors": [
-            "AirbnbEcoPlus"
-        ],
-        "tvTypes": [
-            "TvSeries",
-            "Movie"
-        ],
-        "version": 1,
-        "internalName": "Ocine",
-        "description": "Ocine propose une grande collection de film et de series",
-        "url": "http://192.168.1.135/compiled/OcineProvider.cs3",
-        "name": "Ocine"
     }
 ]
