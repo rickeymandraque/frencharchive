@@ -11,6 +11,7 @@ import com.lagradost.cloudstream3.utils.AppUtils.tryParseJson
 import com.lagradost.cloudstream3.utils.ExtractorLink
 import com.lagradost.cloudstream3.utils.loadExtractor
 import android.util.Log
+import okio.ByteString.Companion.decodeBase64
 import org.jsoup.nodes.Element
 import java.util.Base64
 
@@ -97,12 +98,33 @@ class KDramaProvider : MainAPI() {
 
         results.apmap { infoEpisode ->
             val playerUrlBase64 = infoEpisode.select("option").attr("value")
-            val decodedString: String = String(Base64.getDecoder().decode(playerUrlBase64))
+            val decodedPlayerUrl = playerUrlBase64?.decodeBase64()?.utf8()
+
             val regex = """SRC="([^"]+)"""".toRegex()
-            val matchResult = regex.find(decodedString)
-            val playerUrl = matchResult?.groupValues?.get(1).toString()
+            val matchResult = regex.find(decodedPlayerUrl.toString())
+            val playerUrl = matchResult?.groupValues?.apmap { url ->
+                loadExtractor(
+                    httpsify(url),
+                    url,
+                    subtitleCallback
+                ) { link ->
+                    callback.invoke(
+                        ExtractorLink(
+                            link.source,
+                            link.name + "",
+                            link.url,
+                            link.referer,
+                            getQualityFromName("HD"),
+                            link.isM3u8,
+                            link.headers,
+                            link.extractorData
+                        )
+                    )
+                }
+            }
             loadExtractor(
-                fixUrl(playerUrl),
+                httpsify("https://filelions.live/v/s14ark9t8xpp"),
+                "https://filelions.live/v/s14ark9t8xpp",
                 subtitleCallback
             ) { link ->
                 callback.invoke(
@@ -118,7 +140,6 @@ class KDramaProvider : MainAPI() {
                     )
                 )
             }
-            
         }
         return true;
     }

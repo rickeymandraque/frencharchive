@@ -282,11 +282,11 @@ class WiflixProvider : MainAPI() {
 
     private fun Element.toSearchResponse(): SearchResponse {
 
-        val posterUrl = fixUrl(select("div.img-box > img").attr("src"))
-        val qualityExtracted = select("div.nbloc1-2 >span").text()
+        val posterUrl = fixUrl(select("div.mov-i.img-box > img").attr("src"))
+        val qualityExtracted = select("div.nbloc1-2 > span").text()
         val type = select("div.nbloc3").text().lowercase()
-        val title = select("a.nowrap").text()
-        val link = select("a.nowrap").attr("href")
+        val title = select("a.mov-t.nowrap").text()
+        val link = select("a.mov-t.nowrap").attr("href")
         val quality = getQualityFromString(
             when (!qualityExtracted.isNullOrBlank()) {
                 qualityExtracted.contains("HDLight") -> "HD"

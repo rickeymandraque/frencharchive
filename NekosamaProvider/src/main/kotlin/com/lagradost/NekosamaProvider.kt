@@ -3,6 +3,7 @@ package com.lagradost
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.lagradost.cloudstream3.*
+import com.lagradost.cloudstream3.LoadResponse.Companion.addMalId
 import com.lagradost.cloudstream3.utils.*
 import com.lagradost.cloudstream3.utils.AppUtils.tryParseJson
 import org.jsoup.nodes.Element
@@ -12,7 +13,7 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 class NekosamaProvider : MainAPI() {
-    override var mainUrl = "https://neko-sama.fr"
+    override var mainUrl = "https://animecat.net/"
     override var name = "Neko-sama"
     override val hasQuickSearch = false // recherche rapide (optionel, pas vraimet utile)
     override val hasMainPage = true // page d'accueil (optionel mais encoragé)
@@ -273,7 +274,6 @@ class NekosamaProvider : MainAPI() {
                 )
                 this.showStatus = status
                 this.year = year
-                //addMalId(malId?.toIntOrNull())
 
             }
         }
