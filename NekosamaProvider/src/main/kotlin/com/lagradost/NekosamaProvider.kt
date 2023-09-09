@@ -312,7 +312,7 @@ class NekosamaProvider : MainAPI() {
                             link.url,
                             link.referer,
                             getQualityFromName("HD"),
-                            link.isM3u8,
+                            true,
                             link.headers,
                             link.extractorData
                         )

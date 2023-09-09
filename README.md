@@ -1,5 +1,8 @@
 # French Repo
 
+Il est préférable d'utiliser cette repo avec l'option de contournage des FAI activé sur CloudStream
+
+
 ##
 
 <p>

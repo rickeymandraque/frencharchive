@@ -82,7 +82,6 @@ class FrenchStreamProvider : MainAPI() {
         val tags = soup.select("ul.flist-col > li").getOrNull(1)
         val isMovie = soup.select("div.VOSTFR-tab").isNullOrEmpty()
         //val rating = soup.select("span[id^=vote-num-id]")?.getOrNull(1)?.text()?.toInt()
-
         if (isMovie) {
             val yearRegex = Regex("""ate de sortie\: (\d*)""")
             val year = yearRegex.find(soup.text())?.groupValues?.get(1)
@@ -299,7 +298,6 @@ class FrenchStreamProvider : MainAPI() {
         Pair("/film/romance/page/", "Films Romance"),
         Pair("/serie/aventure-serie/page/", "Séries aventure"),
         Pair("/film/documentaire/page/", "Documentaires")
-
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {

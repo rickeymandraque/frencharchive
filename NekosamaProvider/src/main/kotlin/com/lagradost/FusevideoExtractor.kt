@@ -8,7 +8,7 @@ import okio.ByteString.Companion.decodeBase64
 open class FusevideoExtractor : ExtractorApi() {
 
     override val name: String = "Fusevideo"
-    override val mainUrl: String = "https://fusevideo.net"
+    override val mainUrl: String = "https://fusevideo.io"
     override val requiresReferer = true
 
     override suspend fun getUrl(url: String, referer: String?): List<ExtractorLink>? {
@@ -19,7 +19,7 @@ open class FusevideoExtractor : ExtractorApi() {
         )
         val document = app.get(url,headers=headers).document
         val scriptsourceUrl =
-            document.select("""script[src^="https://fusevideo.net/f/u/"]""")
+            document.select("""script[src^="https://fusevideo.io/f/u/"]""")
                 .attr("src")//** Get the url where the scritp function is **/
 
         val Scripdocument =
