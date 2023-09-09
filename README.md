@@ -19,7 +19,7 @@ Il est préférable d'utiliser cette repo avec l'option de contournage des FAI a
 This template as well as the gradle plugin and the whole plugin system is **heavily** based on [Aliucord](https://ubuntu server github.com/Aliucord).
 _Go use it, it's a great mobile discord client mod!_
 
-And Thanks to [MusterChef](https://github.com/MustardChef/eddyarchive/)
+And Thanks to [MusterChef](https://github.com/MustardChef)
 
 </p>
 
