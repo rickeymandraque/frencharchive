@@ -1,5 +1,5 @@
 // use an integer for version numbers
-version = 4
+version = 5
 dependencies {
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
     implementation("com.google.android.material:material:1.4.0")

@@ -23,6 +23,7 @@ class KDramaProvider : MainAPI() {
     override val hasQuickSearch = false
     override var lang = "fr"
 
+
     // enable this when your provider has a main page
     override val hasMainPage = true
 
@@ -115,30 +116,12 @@ class KDramaProvider : MainAPI() {
                             link.url,
                             link.referer,
                             getQualityFromName("HD"),
-                            link.isM3u8,
+                            true,
                             link.headers,
                             link.extractorData
                         )
                     )
                 }
-            }
-            loadExtractor(
-                httpsify("https://filelions.live/v/s14ark9t8xpp"),
-                "https://filelions.live/v/s14ark9t8xpp",
-                subtitleCallback
-            ) { link ->
-                callback.invoke(
-                    ExtractorLink(
-                        link.source,
-                        link.name + "",
-                        link.url,
-                        link.referer,
-                        getQualityFromName("HD"),
-                        link.isM3u8,
-                        link.headers,
-                        link.extractorData
-                    )
-                )
             }
         }
         return true;
