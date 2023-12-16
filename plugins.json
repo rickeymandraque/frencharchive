@@ -15,7 +15,7 @@
             "TvSeries",
             "Movie"
         ],
-        "version": 5,
+        "version": 6,
         "internalName": "FrenchStreamProvider",
         "description": "FRENCH STREAM en plus d'\u00eatre un site efficace et plaisant dispose d'un contenu visuel diversifi\u00e9",
         "url": "https://raw.githubusercontent.com/AirbnbEcoPlus/frencharchive/master/compiled/FrenchStreamProvider.cs3",

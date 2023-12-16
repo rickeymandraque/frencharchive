@@ -293,11 +293,12 @@ class FrenchStreamProvider : MainAPI() {
     override val mainPage = mainPageOf(
         Pair("/xfsearch/version-film/page/", "Derniers Films"),
         Pair("/xfsearch/version-serie/page/", "Dernieres Séries"),
-        Pair("/film/arts-martiaux/page/", "Films Arts martiaux"),
-        Pair("/film/action/page/", "Films Action"),
-        Pair("/film/romance/page/", "Films Romance"),
-        Pair("/serie/aventure-serie/page/", "Séries aventure"),
-        Pair("/film/documentaire/page/", "Documentaires")
+        Pair("/xfsearch/genre-1/Comédie/", "Film Comedie"),
+        Pair("/xfsearch/genre-1/Aventure/", "Films Aventure"),
+        Pair("/s-tv/romance-series-/", "Séries Romance"),
+        Pair("/s-tv/animation-serie-/", "Séries Animation"),
+        Pair("/s-tv/aventure-series-/", "Séries Aventure"),
+        Pair("/xfsearch/genre-1/Documentaire/", "Documentaires"),
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
