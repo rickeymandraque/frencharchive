@@ -10,3 +10,5 @@
 .cxx
 local.properties
 .vscode
+repo.json
+plugins.json
