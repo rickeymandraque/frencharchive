@@ -1,6 +1,7 @@
 package com.lagradost
 
 
+import android.util.Log
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.lagradost.cloudstream3.*
 import com.lagradost.cloudstream3.LoadResponse.Companion.addTrailer
@@ -23,7 +24,8 @@ class FrenchStreamProvider : MainAPI() {
         val link = "$mainUrl/?do=search&subaction=search&story=$query" // search'
         val document =
             app.post(link).document // app.get() permet de télécharger la page html avec une requete HTTP (get)
-        val results = document.select("div#dle-content > > div.short")
+        val results = document.select("div#dle-content > div.short")
+
 
         val allresultshome =
             results.mapNotNull { article ->  // avec mapnotnull si un élément est null, il sera automatiquement enlevé de la liste
