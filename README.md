@@ -1,3 +1,8 @@
+# **Repo uniquement à but de test, ne pas installer !**
+## 25/02/2024
+*je n'ai rien changé pour l'instant, j'ai ajouter les plugins dans plugins.json pour comprendre le fonctionnement et trouver les bugs.
+pas certain que je procède à des MAJ.*
+
 # French Repo
 
 Il est préférable d'utiliser cette repo avec l'option de contournage des FAI activé sur CloudStream
