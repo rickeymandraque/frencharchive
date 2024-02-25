@@ -66,27 +66,6 @@
         "name": "EmpireStreamingProvider"
     },
     {
-        "iconUrl": "https://www.google.com/s2/favicons?domain=franceiptv.fr/&sz=%size%",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/AirbnbEcoPlus/frencharchive",
-        "fileSize": 76919,
-        "status": 1,
-        "authors": [
-            "Eddy"
-        ],
-        "tvTypes": [
-            "Live",
-            "TvSeries",
-            "Movie",
-            "Anime"
-        ],
-        "version": 9,
-        "internalName": "MaciptvProvider",
-        "description": "Add your IPTV account or use the default account to watch Live TV, Movies,TvSeries ...",
-        "url": "https://raw.githubusercontent.com/AirbnbEcoPlus/frencharchive/master/compiled/MaciptvProvider.cs3",
-        "name": "MaciptvProvider"
-    },
-    {
         "iconUrl": "https://www.google.com/s2/favicons?domain=neko-sama.fr&sz=%size%",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/AirbnbEcoPlus/frencharchive",
