@@ -39,8 +39,8 @@
         ],
         "version": 1,
         "internalName": "AnimeSamaProvider",
-        "description": "Découvrez ce site qui regroupe les derniers animes et les scans. C'est un site pour les fans de manga. Tout y est",
-        "url": "https://github.com/AirbnbEcoPlus/frencharchive/raw/master/compiled/AnimeSamaProvider.cs3",
+        "description": "Decouvrez ce site qui regroupe les derniers animes et les scans. C'est un site pour les fans de manga. Tout y est",
+        "url": "https://raw.githubusercontent.com/AirbnbEcoPlus/frencharchive/master/compiled/AnimeSamaProvider.cs3",
         "name": "AnimeSamaProvider"
     },
     {
