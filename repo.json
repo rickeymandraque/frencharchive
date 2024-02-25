@@ -3,6 +3,6 @@
     "description": "French Repository Forked de Eddy's Repo",
     "manifestVersion": 1,
     "pluginLists": [
-        "https://raw.githubusercontent.com/AirbnbEcoPlus/frencharchive/master/plugins.json"
+        "https://raw.githubusercontent.com/rickeymandraque/frencharchive/master/plugins.json"
     ]
 }
