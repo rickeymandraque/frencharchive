@@ -1,6 +1,6 @@
 {
-    "name": "French Repo",
-    "description": "French Repository Forked de Eddy's Repo",
+    "name": "French Repo TEST By RM",
+    "description": "DO NOT INSTALL !!! French Repository Forked de Eddy's Repo",
     "manifestVersion": 1,
     "pluginLists": [
         "https://raw.githubusercontent.com/rickeymandraque/frencharchive/master/plugins.json"
