@@ -22,10 +22,32 @@
         "name": "FrenchStreamProvider"
     },
     {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=anime-sama.fr&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/AirbnbEcoPlus/frencharchive",
+        "fileSize": 30717,
+        "status": 1,
+        "language": "fr",
+        "authors": [
+            "Sarlay",
+            "Eddy976",
+            "AirbnbEcoPlus"
+        ],
+        "tvTypes": [
+            "Anime",
+            "AnimeMovie"
+        ],
+        "version": 1,
+        "internalName": "AnimeSamaProvider",
+        "description": "Découvrez ce site qui regroupe les derniers animes et les scans. C'est un site pour les fans de manga. Tout y est",
+        "url": "https://raw.githubusercontent.com/AirbnbEcoPlus/frencharchive/master/compiled/AnimeSamaProvider.cs3",
+        "name": "AnimeSamaProvider"
+    },
+    {
         "iconUrl": "https://www.google.com/s2/favicons?domain=empire-streaming.co&sz=%size%",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/AirbnbEcoPlus/frencharchive",
-        "fileSize": 41900,
+        "fileSize": 42924,
         "status": 1,
         "language": "fr",
         "authors": [
